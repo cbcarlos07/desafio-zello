@@ -19,7 +19,25 @@ class PerfilPessoaRepository {
 
     delete(id){
         return PerfilPessoa.destroy({where: {id}})
-    }        
+    }     
+
+    auth(params){
+        const { cpf, senha } = params
+        return PerfilPessoa.findOne({
+            where: {
+                '$_pessoa.cpf$': cpf, 
+                '$_pessoa.senha$': senha
+            },
+            include: [
+                {
+                    association: '_pessoa'
+                },
+                { 
+                    association: '_perfil'
+                }
+            ]
+        })
+    }   
     
 
 }

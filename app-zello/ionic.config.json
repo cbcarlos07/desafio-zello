@@ -1,0 +1,7 @@
+{
+  "name": "app-zello",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

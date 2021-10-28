@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "app-zello",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
