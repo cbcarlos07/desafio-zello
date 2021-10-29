@@ -75,11 +75,36 @@ Este comando deixará o banco de dados executando
 
 ## <a id="antes"> 4. Script para inicialização do banco
 
+
+
 Antes de rodar o projeto faz-se necessária a execução do seguinte comando na pasta raiz
 
     npm i 
 
 Isso irá instalar os pacotes necessários para o projeto
+
+Antes de executar o projeto crie o seguinte arquivo na raiz da pasta `web-api` chamado __.env__ com o seguinte conteúdo;
+
+    NODE_ENV=development
+
+    SERVER_PORT=3005
+    DB_DIALECT=mysql
+    DB_HOST=localhost
+    DB_USERNAME=root
+    DB_PASSWORD=123
+    DB_DATABASE=desafio
+    DB_PORT=3306
+
+
+
+
+    SECRET=desafio
+
+    TIMEZONE=America/Manaus
+
+    MQ_HOST=amqp://localhost
+
+Qualquer dúvida copie o conteúdo do arquivo .env.example e cole no novo arquivo chamado .env    
 
 Após instalados os pacotes, é possível iniciar o projeto com o comando
 
