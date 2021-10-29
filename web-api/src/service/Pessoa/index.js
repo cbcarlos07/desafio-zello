@@ -14,5 +14,6 @@ module.exports = {
     update: (id, obj) => update.update(id, obj),
     getById: id => list.getById(id),
     getAll: () => list.getAll(),
+    buscarTotalCpf: cpf => list.buscarTotalCpf(cpf),
     delete: id => deleteFn.delete(id)
 }

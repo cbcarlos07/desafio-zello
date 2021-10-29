@@ -63,6 +63,15 @@ class PessoaController{
                 res.status(500).json({msg: 'Houve um problema ao tentar buscar', errors: err})
             })
     }
+    buscarTotalCpf(req, res){        
+        PessoaService
+            .buscarTotalCpf(req.params.cpf)
+            .then(response => {
+                res.json(response)
+            }, err => {
+                res.status(500).json({msg: 'Houve um problema ao tentar buscar', errors: err})
+            })
+    }
     
     
 }

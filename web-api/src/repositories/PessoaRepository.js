@@ -29,6 +29,14 @@ class PessoaRepository {
             }
         })
     }
+
+    buscarTotalCpf( cpf ){
+        return Pessoa.count({
+            where: {
+                cpf
+            }
+        })
+    }
     
 
 }

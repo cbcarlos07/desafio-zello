@@ -11,7 +11,7 @@ const jwtMiddleware = require('../helper/jwt')
 
 const rotasBloqueadas = ['/api/v1']
 const ErrorsHandler = require('../Errors')
-app.use( jwtMiddleware( {blocks: rotasBloqueadas} ) )
+//app.use( jwtMiddleware( {blocks: rotasBloqueadas} ) )
 app.use( helmet() )
 app.use(cors())
 

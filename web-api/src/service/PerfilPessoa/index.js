@@ -14,6 +14,8 @@ module.exports = {
     update: (id, obj) => update.update(id, obj),
     getById: id => list.getById(id),
     getAll: () => list.getAll(),
+    listarTodos: () => list.listarTodos(),
+    getByPerson: id => list.getByPerson(id),
     auth: params => list.auth(params),
     delete: id => deleteFn.delete(id)
 }

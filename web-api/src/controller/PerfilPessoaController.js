@@ -8,7 +8,17 @@ class PerfilPessoaController{
                 res.json(response)
             }, err => {
                 console.log('err',err);
-                res.status(500).json({msg: 'Houve um problema ao tentar logar'})
+                res.status(500).json({msg: 'Houve um problema ao tentar logar', error: err})
+            })
+    }
+    listarTodos(req, res){
+        PerfilPessoaService
+            .listarTodos()
+            .then(response => {
+                res.json(response)
+            }, err => {
+                console.log('err',err);
+                res.status(500).json({msg: 'Houve um problema ao tentar listar'})
             })
     }
 

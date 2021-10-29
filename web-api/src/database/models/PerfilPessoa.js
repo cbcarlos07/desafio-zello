@@ -30,14 +30,16 @@ class PerfilPessoa extends Sequelize.Model {
 			   foreignKey: {
 				   name:  'idPessoa'
 			   },
-			   as: '_pessoa'
+			   as: '_pessoa',
+               onDelete: 'cascade',
 		   } ) 
            
 			this.belongsTo( Perfil, {
 			   foreignKey: {
 				   name:  'idPerfil'
 			   },
-			   as: '_perfil'
+			   as: '_perfil',
+               onDelete: 'cascade',
 		   } ) 
 	   }
     }

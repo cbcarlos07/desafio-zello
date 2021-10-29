@@ -8,6 +8,7 @@ router.post(`/${prefix}`, PessoaController.create)
 router.put(`/${prefix}/:id`, PessoaController.update)
 router.delete(`/${prefix}/:id`, PessoaController.delete)
 router.get(`/${prefix}/:id`, PessoaController.getById)
+router.get(`/${prefix}/cpf/:cpf`, PessoaController.buscarTotalCpf)
 router.get(`/${prefix}`, PessoaController.getAll)
 
 

@@ -17,9 +17,19 @@ class PerfilPessoaRepository {
         return PerfilPessoa.findAll()
     }
 
-    delete(id){
-        return PerfilPessoa.destroy({where: {id}})
-    }     
+    delete(param){
+        return PerfilPessoa.destroy({where: param})
+    }
+
+    getByPerson(id){
+        return PerfilPessoa.findOne(
+            {
+                where: {idPessoa: id},
+                include: [
+                    { association: '_perfil'}
+                ]
+            })
+    }
 
     auth(params){
         const { cpf, senha } = params
@@ -38,6 +48,19 @@ class PerfilPessoaRepository {
             ]
         })
     }   
+
+    listarTodos(){
+        return PerfilPessoa.findAll({
+            include: [
+                {
+                    association: '_pessoa'
+                },
+                { 
+                    association: '_perfil'
+                }
+            ]
+        }) 
+    }
     
 
 }
