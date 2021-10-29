@@ -37,6 +37,11 @@ class PessoaRepository {
             }
         })
     }
+
+
+    verificarSeDado(){
+        return Pessoa.count()
+    }
     
 
 }

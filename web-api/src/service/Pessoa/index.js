@@ -15,5 +15,6 @@ module.exports = {
     getById: id => list.getById(id),
     getAll: () => list.getAll(),
     buscarTotalCpf: cpf => list.buscarTotalCpf(cpf),
+    verificarSeDado: () => list.verificarSeDado(),
     delete: id => deleteFn.delete(id)
 }

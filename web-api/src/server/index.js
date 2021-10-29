@@ -8,7 +8,7 @@ const app = express()
 
 const fnRouterConfig = require('../routes')
 const jwtMiddleware = require('../helper/jwt')
-
+const verificar = require('../helper/acesso')
 const rotasBloqueadas = ['/api/v1']
 const ErrorsHandler = require('../Errors')
 //app.use( jwtMiddleware( {blocks: rotasBloqueadas} ) )
@@ -19,7 +19,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true}))
 fnRouterConfig( {app} )
 ErrorsHandler(app)
-
 require('../database/database')
+verificar()
 
 module.exports = app

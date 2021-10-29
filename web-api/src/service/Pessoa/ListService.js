@@ -26,6 +26,10 @@ class ListService {
 		return this.repo.buscarTotalCpf(cpf)
 	}
 
+    verificarSeDado(){
+        return this.repo.verificarSeDado()
+    }
+
 
 
 	
