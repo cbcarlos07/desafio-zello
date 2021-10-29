@@ -5,6 +5,7 @@
 ## [3. Banco de dados](#db)
 ## [4. Script para inicialização do banco](#antes)
 ## [5. Executando o projeto](#run)
+## [6. Evidência de execução](#evidencia)
 
 
 ## <a id="intro">1. Introdução
@@ -108,6 +109,36 @@ Após o banco de dados estiver em execução, os pacotes estiverem instalados, o
 Depois que a API estiver inicializada e em execução, dentro da raíz do frontend é necessário rodar o comando:
 
         ionic serve
+
+[Voltar ao inicio](#begin)
+
+## <a id="evidencia"> 6. Evidência de execução
+
+
+
+Seguem alguns prints da execução do projeto
+
+**Login**
+
+![alt text](https://github.com/cbcarlos07/desafio-zello/blob/develop/print/login.png)        
+
+
+**Home**
+
+![alt text](https://github.com/cbcarlos07/desafio-zello/blob/develop/print/listagem.png)        
+
+**Cadastro**
+
+![alt text](https://github.com/cbcarlos07/desafio-zello/blob/develop/print/cadastro.png)        
+
+**Edição ou remoção**
+
+![alt text](https://github.com/cbcarlos07/desafio-zello/blob/develop/print/editar_remover.png)        
+
+**Menu**
+
+![alt text](https://github.com/cbcarlos07/desafio-zello/blob/develop/print/menu.png)        
+
 
 
 
