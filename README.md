@@ -164,6 +164,11 @@ Seguem alguns prints da execução do projeto
 
 ![alt text](https://github.com/cbcarlos07/desafio-zello/blob/develop/print/menu.png)        
 
+## <a id="json"> 7. Arquivo json
+
+[Este](https://github.com/cbcarlos07/desafio-zello/blob/main/json-insominia/Insomnia_2021-11-02.json) é o arquivo json usado para na ferramenta para testar as apis
+
+O software para testar as apis foi o Insominia
 
 
 
