@@ -173,7 +173,9 @@ O software para testar as apis foi o [Insominia](https://insomnia.rest/)
 
 Exemplo de teste para `insert` de pessoa
 
-![alt text](https://github.com/cbcarlos07/desafio-zello/blob/main/print/pessoa-create.png)        
+![alt text](https://github.com/cbcarlos07/desafio-zello/blob/main/print/pessoa-create.png)  
+
+![alt text](https://github.com/cbcarlos07/desafio-zello/blob/main/print/print_test.png)        
 
 
 
